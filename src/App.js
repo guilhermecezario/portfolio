@@ -140,7 +140,7 @@ function App() {
         </div>
         
         <div className="container-experience" id="experiencias">
-          <h1>Minhas experiencias:</h1>
+          <h1>Minhas experiências:</h1>
           
           <div className='content'>
             <LocomotivaIcon />
@@ -175,23 +175,23 @@ function App() {
           
           <p>Entre em contato comigo para saber mais sobre mim, agradeço desde já 🥰</p>
           
-          <ul className="nav justify-content-between mt-4">
-            <li className="nav-item mb-2">
+          <ul className="row nav g-2">
+            <li className="col-12 col-lg-2 col-sm-4 nav-item">
               <a className="btn btn-outline-secondary nav-link" rel="noreferrer" href="https://www.instagram.com/guilherme.cezarioo/"  target="_blank">Instagram</a>
             </li>
-            <li className="nav-item">
+            <li className="col-12 col-lg-2 col-sm-4 nav-item">
               <a className="btn btn-outline-secondary nav-link" rel="noreferrer" href="https://www.linkedin.com/in/guilherme-cezario/"  target="_blank">Linkedin</a>
             </li>
-            <li className="nav-item">
+            <li className="col-12 col-lg-2 col-sm-4 nav-item">
               <a className="btn btn-outline-secondary nav-link" rel="noreferrer" href="https://gitlab.com/guilhermecezario/"  target="_blank">Gitlab</a>
               </li>
-              <li className="nav-item">
+              <li className="col-12 col-lg-2 col-sm-4 nav-item">
               <a className="btn btn-outline-secondary nav-link" rel="noreferrer" href="https://github.com/guilhermecezario/"  target="_blank">Github</a>
             </li>
-            <li className="nav-item">
+            <li className="col-12 col-lg-2 col-sm-4 nav-item">
               <a className="btn btn-outline-secondary nav-link" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5515998211270&text=Ola%20tudo%20bem%3F%20Vim%20pelo%20seu%20portfolio"  target="_blank">Whatsapp</a>
               </li>
-              <li className="nav-item">
+              <li className="col-12 col-lg-2 col-sm-4 nav-item">
               <a className="btn btn-outline-secondary nav-link" rel="noreferrer" href="https://discord.com/users/365652552873934851"  target="_blank">Discord</a>
             </li>
           </ul>
