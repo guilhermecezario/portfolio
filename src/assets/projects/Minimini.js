@@ -11,7 +11,7 @@ function MiniminiIcon() {
     >
       <g transform="translate(-24.804 -51.589)">
         <g
-          fill="#fff"
+          fill="#ddd"
           stroke="none"
           transform="matrix(.03528 0 0 -.03528 17.083 205.753)"
         >
