@@ -84,7 +84,9 @@ function App() {
 
             <div className='col-12 col-lg-4 col-sm-6'>
               <a className='py-4 btn btn-outline-secondary d-flex align-items-center flex-column' rel="noreferrer" href="https://mupajardim.com/"  target="_blank">
-                <MupaIcon />
+                <div>
+                  <MupaIcon />
+                </div>
                 
                 <div className='py-3'>
                   <h5><strong>Mupa</strong></h5>
