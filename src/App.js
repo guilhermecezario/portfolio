@@ -56,10 +56,10 @@ function App() {
           <div>
             <img src={profile} alt="profile" />
             
-            <p>Olá meu nome é <strong>Guilherme Cezário</strong> e tenho <strong>20 anos</strong></p>
-            <p>Formado em técnico de informática para a internet em 2019 me apaixonei pala programação e nunca mais me vi sem o mundo da tecnologia na minha vida</p>
-            <p>Moro em uma cidadezinha do interior de São Paulo chamada Itapeva. Aqui nasci e fui criado desde pequeno</p>
-            <p>Gosto de desafios e coisas que me incentivam a aprender mais para alcançar o objetivo</p>
+            <p>Olá meu nome é <strong>Guilherme Cezário</strong> e tenho <strong>20 anos</strong>.</p>
+            <p>Formado em técnico de informática para a internet em 2019 me apaixonei pela programação e nunca mais me vi sem o mundo da tecnologia na minha vida.</p>
+            <p>Moro em uma cidadezinha do interior de São Paulo chamada Itapeva. Aqui nasci e fui criado desde pequeno.</p>
+            <p>Gosto de desafios e coisas que me incentivam a aprender mais para alcançar o objetivo.</p>
             <p>Busco novos aprendizados e conhecimento a cada dia, focado nos objetivos para ser o melhor de mim e conquistar aquilo que desejo.</p>
             <p>Quando não estou no trabalho procuro me distrair e fugir da rotina do dia a dia para não afetar o meu rendimento</p>
           </div>
