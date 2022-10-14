@@ -24,10 +24,10 @@ import { MdArrowForward } from "react-icons/md";
 function App() {
   return (
     <div>
-      <Navbar expand="lg" fixed="top">
+      <Navbar expand="lg" fixed="top" variant="dark">
         <Container fluid>
           <Navbar.Brand href="#"><Logo/></Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" color="white"/>
+          <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0 bg-dark"
@@ -175,7 +175,7 @@ function App() {
           <div className="container-contact" id="contato">
           <h1>Meus contatos:</h1>
           
-          <p>Entre em contato comigo para saber mais sobre mim, agradeço desde já 🥰</p>
+          <p>Entre em contato comigo para saber mais sobre mim, agradeço desde já agradeço 🥰</p>
           
           <ul className="row nav g-2">
             <li className="col-12 col-lg-2 col-sm-4 nav-item">
