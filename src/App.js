@@ -14,6 +14,7 @@ import TipaIcon from './assets/projects/Tipa';
 import WholeIcon from './assets/projects/Whole';
 import ZeinbIcon from './assets/projects/Zeinb';
 
+import RiachueloIcon from './assets/RiachueloIcon';
 import LocomotivaIcon from './assets/LocomotivaIcon';
 import HexalabIcon from './assets/HexalabIcon';
 
@@ -44,7 +45,7 @@ function App() {
       <div className="container">
         <div className="container-main">
           <h1>Guilherme Cezário</h1>
-          <h2>Full Stack Developer na LOCOMOTIVA.info</h2>
+          <h2>Full Stack Developer nas Lojas Riachuelo</h2>
           <p>Um jovem apaixonado e explorador do mundo da tecnologia</p>
           
           <a href='#sobre'><strong>Ver mais sobre mim</strong> <MdArrowForward/></a>
@@ -143,8 +144,20 @@ function App() {
         
         <div className="container-experience" id="experiencias">
           <h1>Minhas experiências:</h1>
-          
+
           <div className='content'>
+            <RiachueloIcon />
+            
+            <div>
+              <p><strong>Empresa</strong>: Lojas Riachuelo</p>
+              <p>Participando da parte backoffice da empresa, auxiliando na criação de novos produtos e fazendo melhorias em projetos ja existentes;</p>
+
+              <p><strong>Competências</strong>: GitHub · SQL · CSS · Bootstrap · PostgreSQL · HTML · Amazon Web Services · React Native · Git · JavaScript · Mysql · Node.js</p>
+              <p>desde dezembro de 2022 até o momento</p>
+            </div>
+          </div>
+          
+          <div className='two-content'>
             <LocomotivaIcon />
             
             <div>
@@ -155,7 +168,7 @@ function App() {
               <p><strong>Pixta.me</strong> - solução de pagamentos e bilhetagem para eventos</p>
 
               <p><strong>Competências</strong>: GitHub · Ruby · SQL · CSS · Bootstrap · PostgreSQL · HTML · Amazon Web Services · Ruby on Rails · Vue.js · React Native · Git · JavaScript · Mysql · Node.js</p>
-              <p>desde janeiro de 2021 até o momento</p>
+              <p>de janeiro de 2021 até dezembro de 2022</p>
             </div>
           </div>
             
