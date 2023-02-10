@@ -125,21 +125,37 @@ const arena = createMatrix(12, 20);
 context.fillStyle = backgroundColor;
 context.fillRect(0, 0, canvas.width, canvas.height);
 
+let playGame = false;
+
+let startGame = false;
+
 function start() {
-  updateDisabledButtons(true)
+  if (playGame) {
+    updateDisabledButtons(true)
 
-  player.indexNext = ramdomIndexPiece();
-
-  playerReset();
-  updateScore();
-
-  update();
-
-  gameInterval = setInterval(() => {
+    gameInterval = setInterval(() => {
+      requestAnimationFrame(update)
+    }, dropInterval)
+  
     requestAnimationFrame(update)
-  }, dropInterval)
+  } else {
+    updateDisabledButtons(true)
+  
+    player.indexNext = ramdomIndexPiece();
+  
+    playerReset();
+    updateScore();
+  
+    update();
+  
+    gameInterval = setInterval(() => {
+      requestAnimationFrame(update)
+    }, dropInterval)
+  
+    requestAnimationFrame(update)
+  }
 
-  requestAnimationFrame(update)
+  playGame = true
 }
 
 function pause() {
@@ -228,7 +244,7 @@ function draw() {
 
   drawSmallPiece(contextNextPiece, player.indexNext)
 
-  if (player.indexHold) {
+  if (player.indexHold || player.indexHold == 0) {
     drawSmallPiece(contextHoldPiece, player.indexHold)
   };
 }
@@ -299,7 +315,7 @@ function playerMove(offset) {
 function playerReset() {
   player.indexHold = player.index;
 
-  player.piece = pieces[player.indexNext],
+  player.piece = pieces[player.indexNext];
   player.index = player.indexNext;
   
   player.indexNext = ramdomIndexPiece();
@@ -352,6 +368,8 @@ function updateScore() {
 }
 
 function updateDisabledButtons(disabled) {
+  startGame = disabled;
+
   elementButtonStart.disabled = disabled;
   elementButtonPause.disabled = !disabled;
 
@@ -359,7 +377,7 @@ function updateDisabledButtons(disabled) {
 }
 
 document.addEventListener('keydown', event => {
-  if (!gameInterval) return;
+  if (!startGame) return;
 
   if (event.key === 'ArrowLeft') {
     playerMove(-1);
