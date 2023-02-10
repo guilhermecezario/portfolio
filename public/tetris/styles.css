@@ -42,6 +42,11 @@ body {
   flex-direction: column;
 }
 
+.game-left, .game-rigth {
+  width: 100%;
+  max-width: 150px;
+}
+
 @media (max-width: 800px) {
   .container {
     height: 80%;
@@ -55,22 +60,17 @@ body {
 }
 
 @media (max-width: 550px) {
-  .container {
-    height: 40%;
+  .game-left, .game-rigth {
+    width: 100%;
+    max-width: 90px;
   }
 }
 
-@media (max-width: 450px) {
-  .container {
-    height: 30%;
-  }
-}
-/* 
-@media (max-width: 680px) {
+@media (max-width: 420px) {
   .container {
     height: 40%;
   }
-} */
+}
 
 h1 {
   padding: 10px;
@@ -91,11 +91,6 @@ h1 {
   align-items: flex-start;
 
   padding-bottom: 10px;
-}
-
-.game-left, .game-rigth {
-  width: 100%;
-  max-width: 150px;
 }
 
 .content-infos {
@@ -127,6 +122,11 @@ h1 {
 
   aspect-ratio: 1 / 1;
   width: 100%;
+}
+
+.content-infos div canvas {
+  max-height: 100%;
+  border-radius: 5px;
 }
 
 .hold-piece {
