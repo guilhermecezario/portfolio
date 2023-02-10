@@ -50,9 +50,27 @@ body {
 
 @media (max-width: 680px) {
   .container {
-    height: 60%;
+    height: 50%;
   }
 }
+
+@media (max-width: 550px) {
+  .container {
+    height: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 30%;
+  }
+}
+/* 
+@media (max-width: 680px) {
+  .container {
+    height: 40%;
+  }
+} */
 
 h1 {
   padding: 10px;
@@ -129,6 +147,7 @@ h1 {
 
 .content-tetris {
   position: relative;
+  height: 100%;
 }
 
 .content-tetris div {
