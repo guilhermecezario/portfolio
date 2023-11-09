@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 
-import Logo from './assets/Logo';
+import Logo from './assets/logo';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -14,6 +14,7 @@ import TipaIcon from './assets/projects/Tipa';
 import WholeIcon from './assets/projects/Whole';
 import ZeinbIcon from './assets/projects/Zeinb';
 
+import RizzoIcon from './assets/Rizzo';
 import RiachueloIcon from './assets/RiachueloIcon';
 import LocomotivaIcon from './assets/LocomotivaIcon';
 import HexalabIcon from './assets/HexalabIcon';
@@ -45,7 +46,7 @@ function App() {
       <div className="container">
         <div className="container-main">
           <h1>Guilherme Cezário</h1>
-          <h2>Full Stack Developer nas Lojas Riachuelo</h2>
+          <h2>Full Stack Developer na empresa Rizzo Park</h2>
           <p>Um jovem apaixonado e explorador do mundo da tecnologia</p>
           
           <a href='#sobre'><strong>Ver mais sobre mim</strong> <MdArrowForward/></a>
@@ -57,7 +58,7 @@ function App() {
           <div>
             <img src={profile} alt="profile" />
             
-            <p>Olá meu nome é <strong>Guilherme Cezário</strong> e tenho <strong>20 anos</strong>.</p>
+            <p>Olá meu nome é <strong>Guilherme Cezário</strong> e tenho <strong>21 anos</strong>.</p>
             <p>Formado em técnico de informática para a internet em 2019 me apaixonei pela programação e nunca mais me vi sem o mundo da tecnologia na minha vida.</p>
             <p>Moro em uma cidadezinha do interior de São Paulo chamada Itapeva. Aqui nasci e fui criado desde pequeno.</p>
             <p>Gosto de desafios e coisas que me incentivam a aprender mais para alcançar o objetivo.</p>
@@ -146,6 +147,18 @@ function App() {
           <h1>Minhas experiências:</h1>
 
           <div className='content'>
+            <RizzoIcon />
+            
+            <div>
+              <p><strong>Empresa</strong>: Rizzo Park</p>
+              <p>Responsável pela resolução de relatórios e pela melhoria contínua dos produtos, liderei a otimização dos processos de integração e pagamento. Participei ativamente do ciclo completo de desenvolvimento de aplicativos, desde o planejamento até a entrega para produção. Durante esse período, nossa equipe alcançou um notável avanço, elevando a avaliação do aplicativo de 1.5 para 4.8. Além disso, participei do projeto 'estacione', uma iniciativa inovadora que permitiu o pagamento de tickets de estacionamento sem a necessidade de baixar um aplicativo adicional;</p>
+
+              <p><strong>Competências</strong>: Bitbucket · Google Cloud Platform (GCP) · NodeJS · GitHub · SQL · CSS · Bootstrap · PostgreSQL · Amazon Web Services · React Native · PHP · JavaScript · Mysql</p>
+              <p>desde abril de 2023e até o momento</p>
+            </div>
+          </div>
+
+          <div className='two-content'>
             <RiachueloIcon />
             
             <div>
@@ -153,7 +166,7 @@ function App() {
               <p>Participando da parte backoffice da empresa, auxiliando na criação de novos produtos e fazendo melhorias em projetos ja existentes;</p>
 
               <p><strong>Competências</strong>: GitHub · SQL · CSS · Bootstrap · PostgreSQL · HTML · Amazon Web Services · React Native · Git · JavaScript · Mysql · Node.js</p>
-              <p>desde dezembro de 2022 até o momento</p>
+              <p>desde dezembro de 2022 até fevereiro de 2023</p>
             </div>
           </div>
           
